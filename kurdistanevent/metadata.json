@@ -1,0 +1,10 @@
+{
+  "name": "Copy of f final VERSION",
+  "description": "An event discovery application to find and create events. This initial version includes user authentication, event creation, and an event feed.",
+  "locales": [
+    "en",
+    "ar",
+    "ku"
+  ],
+  "requestFramePermissions": []
+}

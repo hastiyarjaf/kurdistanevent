@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Iraqi Legal Directory - Find qualified lawyers across Iraq. Multilingual legal services in English, Arabic, and Kurdish. Professional legal assistance for all practice areas." />
+    <meta name="keywords" content="Iraqi lawyers, legal directory, Iraq legal services, محامون عراقيون, پارێزەرانی عێراق" />
+    <meta name="author" content="Iraqi Legal Directory" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Iraqi Legal Directory - Find Qualified Lawyers">
+    <meta property="og:description" content="Professional legal directory for Iraq. Find qualified lawyers in your area with multilingual support.">
+    <meta property="og:image" content="/assets/logo.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Iraqi Legal Directory">
+    <meta property="twitter:description" content="Find qualified lawyers across Iraq with multilingual support.">
+    <meta property="twitter:image" content="/assets/logo.svg">
+    
+    <title>Iraqi Legal Directory | دليل القانونيين العراقي | کۆمەڵەی پارێزەرانی عێراق</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Brand fonts for multilingual support */
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&family=Noto+Sans+Kurdish:wght@300;400;500;600;700;800&display=swap');
+      
+      :root {
+        --color-primary-red: #CE1126;
+        --color-primary-white: #FFFFFF;
+        --color-primary-green: #007A3D;
+        --color-secondary-gold: #D4AF37;
+        --color-text-primary: #1F2937;
+        --color-text-secondary: #6B7280;
+        --font-primary: 'Inter', 'Roboto', 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        --font-arabic: 'Vazirmatn', 'Noto Sans Arabic', 'Cairo', sans-serif;
+        --font-kurdish: 'Vazirmatn', 'Noto Sans Kurdish', sans-serif;
+        --spacing-base: 1rem;
+        --radius-base: 0.25rem;
+        --shadow-base: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+      
+      body {
+        font-family: var(--font-primary);
+        color: var(--color-text-primary);
+        background-color: #FAFAFA;
+      }
+      
+      /* RTL support for Arabic and Sorani Kurdish */
+      [dir="rtl"] {
+        font-family: var(--font-arabic);
+      }
+      
+      [lang="ku-sorani"] {
+        font-family: var(--font-kurdish);
+      }
+      
+      /* Brand-specific Tailwind overrides */
+      .bg-brand-red { background-color: var(--color-primary-red); }
+      .bg-brand-green { background-color: var(--color-primary-green); }
+      .text-brand-red { color: var(--color-primary-red); }
+      .text-brand-green { color: var(--color-primary-green); }
+      .text-brand-gold { color: var(--color-secondary-gold); }
+      .border-brand-red { border-color: var(--color-primary-red); }
+      .border-brand-green { border-color: var(--color-primary-green); }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
