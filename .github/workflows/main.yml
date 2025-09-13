@@ -1,21 +1,18 @@
-name: Run Gemini Script
+name: Test API Key
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  run-script:
+  test-key:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-      - name: Install dependencies
-        run: npm install
-      - name: Run script with Gemini API key
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node app.js
+      - name: Check if Key is Available
+        run: |
+          if [ -n "${{ secrets.GEMINI_API_KEY }}" ]; then
+            echo "✅ FOUND: The secret GEMINI_API_KEY exists!"
+          else
+            echo "❌ ERROR: The secret GEMINI_API_KEY was NOT found."
+            exit 1
+          fi
