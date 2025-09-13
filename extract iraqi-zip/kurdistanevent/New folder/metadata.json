@@ -1,7 +1,0 @@
-{
-  "name": "Kurdistan Event Hub",
-  "description": "An AI-powered platform to discover and celebrate cultural events, festivals, and community gatherings across the Kurdistan Region and the global diaspora. It features multilingual support, intelligent event recommendations, and tools for event organizers.",
-  "requestFramePermissions": [
-    "camera"
-  ]
-}
